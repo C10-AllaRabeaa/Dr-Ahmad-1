@@ -29,7 +29,7 @@ const Login = () => {
     const login_1 = () => {
         const data = { email, password }
 
-        axios.post('http://localhost:5000/user/login', data)
+        axios.post('http://localhost:5000/users/login', data)
             .then((result) => {
                 console.log(result);
                 setToken(result.data.token)

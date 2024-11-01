@@ -28,7 +28,7 @@ const Register = () => {
 
         const data = { firstName, lastName, age, country, email, password }
 
-        axios.post('http://localhost:5000/user/register', data)
+        axios.post('http://localhost:5000/users/register', data)
             .then((result) => {
                 setMessage(result.data.message)
                 navigateLogin("/Login")
