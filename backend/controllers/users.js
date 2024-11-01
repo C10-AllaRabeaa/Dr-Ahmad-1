@@ -2,7 +2,7 @@ const userModel =require('../models/usersSchema')
 const bcryptjs = require("bcryptjs")
 const jwt = require("jsonwebtoken");
 
-const creatUser = (req, res) => {
+const register = (req, res) => {
     console.log(req.body);
 
 
@@ -167,4 +167,4 @@ const getuserById = (req, res) => {
         })
 }
 
-module.exports = { creatUser, getAllUsers, login, updateUserById ,delateUserById,getuserById}
+module.exports = { register, getAllUsers, login, updateUserById ,delateUserById,getuserById}

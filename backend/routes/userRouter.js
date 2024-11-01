@@ -6,10 +6,10 @@ const userRouter = express.Router();
 
 const authentication = require("../middleware/authentication")
 
-const {creatUser, getAllUsers, login, updateUserById ,delateUserById,getuserById} = require("../controllers/users")
+const {register, getAllUsers, login, updateUserById ,delateUserById,getuserById} = require("../controllers/users")
 
 
-userRouter.post('/register', creatUser);
+userRouter.post('/register', register);
 userRouter.get('/allusers', getAllUsers);
 userRouter.post("/login", login);
 userRouter.put("/update/:id", authentication, updateUserById);
