@@ -1,0 +1,16 @@
+.Nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(236, 225, 225);
+    color: white;
+    height: 50px;
+}
+
+.textNav1{
+    color: rgb(224, 18, 18);
+    border: 3px black solid;
+    border-radius: 5px;
+    font-size: 20px;
+}

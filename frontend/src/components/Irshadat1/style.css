@@ -1,0 +1,129 @@
+.about-container {
+    max-width: 900px; /* الحد الأقصى للعرض */
+    margin: 20px auto; /* توسيط المحتوى */
+    padding: 20px; /* مساحة داخلية */
+    border-radius: 10px; /* زوايا دائرية */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف للصندوق */
+    font-family: 'Arial', sans-serif; /* خط 
+    مناسب */
+    background-color: #d7d3e7;
+    font-size: larger;
+}
+
+.about-container h1 {
+    text-align: center; /* توسيط العنوان */
+    color: #2c3e50; /* لون النص */
+    margin-bottom: 20px; /* تباعد أسفل العنوان */
+    font-size: 24px; /* حجم الخط */
+}
+
+.about-list {
+    padding-left: 20px; /* تباعد مع بداية القائمة */
+    line-height: 1.6; /* تحسين تباعد الأسطر */
+    color: #333; /* لون النص */
+}
+
+.about-list li {
+    margin-bottom: 10px; /* تباعد بين عناصر القائمة */
+}
+
+.about-container p {
+    margin-top: 20px; /* تباعد أعلى الفقرة */
+    text-align: center; /* توسيط الفقرة */
+    color: #7f8c8d; /* لون رمادي */
+}
+
+.btn-back{
+    border-radius: 5px;
+    border: 2px rgb(7, 32, 225) solid;
+    background-color: #c0cfd0;
+    color: rgba(232, 7, 7, 0.634);
+    font-weight: bolder;
+    width: 40px;
+}
+
+.btn-back:hover{
+    border-radius: 5px;
+    border: 3px rgb(33, 52, 200) solid;
+    background-color: #22c9d5;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+
+/* Media queries لجعل التصميم استجابة للموبايل */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 15px; /* تقليل المساحة الداخلية */
+    }
+
+    .about-container h1 {
+        font-size: 20px; /* حجم خط أصغر على الموبايل */
+    }
+
+    .about-list {
+        padding-left: 10px; /* تقليل تباعد البداية للقائمة */
+    }
+
+    .about-list li {
+        margin-bottom: 8px; /* تقليل التباعد بين عناصر القائمة */
+    }
+
+    .about-container p {
+        font-size: 14px; /* حجم خط أصغر للفقرة */
+    }
+}
+
+/* Media queries لجعل التصميم استجابة للأجهزة الصغيرة */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 10px; /* مزيد من التقليل للمساحة الداخلية */
+    }
+
+    .about-container h1 {
+        font-size: 18px; /* حجم خط أصغر */
+    }
+
+    .about-list {
+        padding-left: 5px; /* تباعد أقل */
+    }
+
+    .about-list li {
+        margin-bottom: 6px; /* تباعد أقل */
+    }
+
+    .about-container p {
+        font-size: 12px; /* حجم خط أصغر للفقرة */
+    }
+}
+
+.btn-print{
+    border: 3px blue solid;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: red;
+}
+
+.btn-print:hover{
+    border-radius: 5px;
+    border: 3px rgb(33, 52, 200) solid;
+    background-color: #22c9d5;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+/* إخفاء Navbar أو أي عناصر أخرى عند الطباعة */
+@media print {
+    /* إخفاء عناصر معينة */
+    .Nav, .btn-back, .btn-print  {
+      display: none;
+    }
+  
+    /* جعل المحتوى المحدد للطباعة فقط مرئياً */
+    .about-container {
+      width: 100%;
+    }
+  }
+  

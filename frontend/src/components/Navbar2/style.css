@@ -1,0 +1,54 @@
+
+.Navbar2 {
+    background-color: #14a3c3; /* لون الخلفية */
+    display: flex; /* لعرض العناصر في صف */
+    justify-content: space-around; /* توزيع العناصر بالتساوي */
+    align-items: center; /* محاذاة العناصر في المنتصف عموديًا */
+    padding: 10px; /* إضافة مسافة داخلية */
+    box-shadow: 0 5px 10px rgba(7, 0, 0, 0.1); /* إضافة ظل */
+    position: sticky; /* تثبيت الـ Navbar عند التمرير */
+    top: 0; /* تثبيته في أعلى الصفحة */
+    z-index: 1000; /* التأكد من أن الـ Navbar فوق العناصر الأخرى */
+    transition: background-color 0.3s; /* تأثير الانتقال عند تغيير الخلفية */
+    height: 50px;
+    border-radius: 20px;
+    
+}
+
+/* ستايل للرابط */
+.textNav {
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة الخط السفلي */
+    font-size: 18px; /* حجم الخط */
+    padding: 10px 15px; /* إضافة مسافة داخلية للرابط */
+    border-radius: 5px; /* زوايا دائرية */
+    transition: background-color 0.3s, color 0.3s; /* تأثير الانتقال عند تغيير الخلفية واللون */
+}
+
+/* تأثير عند التحويم فوق الرابط */
+.textNav:hover {
+    background-color: #0e6fed; /* تغيير لون الخلفية عند التحويم */
+    color: #000; /* تغيير لون النص عند التحويم */
+    border-radius: 20px;
+    border: 2px black solid;
+}
+
+/* تأثير عند الضغط على الرابط */
+.textNav:active {
+    background-color: #130b01; /* تغيير لون الخلفية عند الضغط */
+    color: white; /* تغيير لون النص عند الضغط */
+}
+
+/* ستايل للأجهزة المحمولة */
+@media (max-width: 768px) {
+    .Navbar2 {
+        flex-direction: column; /* جعل العناصر في عمود */
+        align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+    }
+
+    .textNav {
+        width: 100%; /* جعل الروابط تأخذ عرض الشاشة الكامل */
+        text-align: center; /* محاذاة النص في المنتصف */
+        margin: 5px 0; /* إضافة مسافة بين العناصر */
+    }
+}

@@ -1,0 +1,126 @@
+.container1{
+  
+  direction: rtl;
+  margin-top: 20px;
+}
+
+.navbar1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(107, 9, 227);
+  color: rgb(255, 243, 243);
+  height: 50px;
+  
+  
+}
+
+.textNav1{
+  border-radius: 6px;
+  border: 3px black solid;
+  color: rgb(12, 106, 220);
+  font-size: larger;
+}
+
+.blue1:hover{
+  color: rgb(206, 14, 55);
+}
+.content1{
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/*  .image1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  border: 2px red solid;
+}  */
+
+/* تنسيق خاص لحاوية الصور */
+.image1 img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover; /* تأكد من أن الصورة تغطي المساحة بشكل متناسق */
+  border-radius: 15px; /* زوايا دائرية */
+  border: 5px solid #ccc; /* إضافة إطار رقيق */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* تأثير الانتقال عند التمرير فوق الصورة */
+}
+
+/* عند تمرير الماوس فوق الصورة */
+.image1 img:hover {
+  transform: scale(1.05); /* تكبير الصورة قليلاً عند التمرير */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* إضافة ظل جميل للصورة */
+}
+
+/* إضافة بعض المساحة حول الصور */
+.image1 {
+  margin: 10px 0px;
+}
+
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center; /* لجعل النص والصورة بمحاذاة وسطية */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.image6 {
+  width: 150px; /* عرض الصورة */
+  height: 150px; /* ارتفاع الصورة */
+  border-radius: 50%; /* يجعل الصورة دائرية */
+  margin-left: 20px; /* مسافة بين الصورة والنص */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact-info span {
+  margin-right: 10px; /* مسافة بين النص وأيقونة الهاتف */
+  font-size: 18px;
+  color: #007bff;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.location-info a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.location-info span {
+  margin-right: 10px;
+}
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+.pageLogin {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://res.cloudinary.com/diuwwiwqs/image/upload/v1713261722/yallwo_g2vinv.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 98vw; 
+    height: 96vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.inputlogin {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 400px;
+    margin: auto; /* Center horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.inputlogin p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.inputlogin input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inputlogin button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.inputlogin button:hover {
+    background-color: #0056b3;
+}
+
+.inputlogin p.message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .inputlogin {
+        max-width: 95%;
+    }
+}
